@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @app.route("/")
 def dashboard():
-    return send_from_directory(BASE_DIR, "dashboard.html")
+    return send_from_directory(BASE_DIR, "call_sheet.csv", mimetype="text/csv")
 
 @app.route("/call_sheet.csv")
 def call_sheet():
