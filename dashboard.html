@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snapshot Command Dashboard</title>
+
+<style>
+body { font-family: Arial; background:#0b0b0b; color:#eee; margin:0; }
+h1 { color:#00ff99; margin:10px; }
+
+/* 🔥 FIXED HEADER AREA */
+.top-section {
+  position:sticky;
+  top:0;
+  background:#0b0b0b;
+  z-index:1000;
+  padding:10px;
+  border-bottom:1px solid #333;
+}
+
+/* 🔥 SCROLL AREA */
+.table-container {
+  height: calc(100vh - 260px);
+  overflow-y:auto;
+}
+
+.legend {
+  background:#111;
+  padding:10px;
+  margin-bottom:10px;
+  border:1px solid #333;
+  border-radius:6px;
+  font-size:13px;
+}
+
+table { border-collapse: collapse; width:100%;}
+th, td { padding:8px; border-bottom:1px solid #333; text-align:left;}
+th {
+  background:#1a1a1a;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.mode-active { background:#00ff99; color:#000; }
+
+.expand { cursor:pointer; background:#141414; font-weight:bold; }
+.child { display:none; background:#0f0f0f; }
+
+button { margin:5px; padding:6px 12px; cursor:pointer; }
+
+select, input {
+  margin:5px;
+  padding:6px;
+  background:#111;
+  color:#eee;
+  border:1px solid #333;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 FIXED HEADER -->
+<div class="top-section">
+
+<h1>🚀 Snapshot Sales Command Board</h1>
+
+<div class="legend">
+<b>Legend:</b> Active Buyer | Red High | Orange Medium | Blue Low
+</div>
+
+<div>
+<b>Mode:</b>
+<button id="mode_pressure" onclick="setMode('pressure')">Pressure</button>
+<button id="mode_buy" onclick="setMode('buy')">Buy</button>
+<button id="mode_sell" onclick="setMode('sell')">Sell</button>
+<button id="mode_dealer" onclick="setMode('dealer')">Dealer View</button>
+</div>
+
+<div>
+Model:<select id="model"></select>
+Sub Model:<select id="sub_model"></select>
+Trim:<select id="trim"></select>
+Year:<select id="year"></select>
+Color:<select id="color"></select>
+</div>
+
+<div>
+Rep:<select id="rep"></select>
+
+Region:
+<select id="region" multiple size="3">
+<option>East North Central</option>
+<option>West North Central</option>
+<option>Mountain</option>
+<option>Pacific</option>
+<option>East South Central</option>
+<option>West South Central</option>
+<option>South Atlantic</option>
+<option>Middle Atlantic</option>
+<option>New England</option>
+</select>
+</div>
+
+<div>
+Dealer Search:
+<input id="dealer_search" placeholder="Dealer name or BAC">
+<button onclick="applyFilters()">Run</button>
+<button onclick="clearFilters()">Clear</button>
+</div>
+
+</div>
+
+<!-- 🔥 SCROLLABLE TABLE -->
+<div class="table-container">
+<table id="table">
+<thead>
+<tr>
+<th>Dealer</th>
+<th>Model</th>
+<th>Total</th>
+<th>Avg Age</th>
+<th>Median Age</th>
+<th>VIN</th>
+<th>Year</th>
+<th>Age</th>
+<th>Discount</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script>
+
+/* 🔥 NO JS CHANGES — YOUR LOGIC IS UNTOUCHED */
+
+let data=[];
+let filtered=[];
+let mode="pressure";
+
+function parseCSV(text){
+  let rows=text.trim().split("\n");
+  let headers=rows[0].split(",");
+
+  return rows.slice(1).map(line=>{
+    let vals=[],cur="",inQuotes=false;
+
+    for(let c of line){
+      if(c=='"'){ inQuotes=!inQuotes; }
+      else if(c=="," && !inQuotes){ vals.push(cur); cur=""; }
+      else cur+=c;
+    }
+    vals.push(cur);
+
+    let obj={};
+    headers.forEach((h,i)=>obj[h.trim()]=(vals[i]||"").trim());
+    return obj;
+  });
+}
+
+function loadData(){
+  fetch('call_sheet.csv')
+  .then(r=>r.text())
+  .then(t=>{
+    data=parseCSV(t);
+    filtered=data;
+    populate();
+    render();
+  });
+}
+
+function populate(){
+  function fill(id,field){
+    let vals=[...new Set(data.map(d=>d[field]).filter(Boolean))].sort();
+    let el=document.getElementById(id);
+    el.innerHTML='<option value="">All</option>';
+    vals.forEach(v=>el.innerHTML+=`<option>${v}</option>`);
+  }
+
+  fill("model","model");
+  fill("sub_model","sub_model");
+  fill("trim","trim");
+  fill("year","year");
+  fill("color","color");
+  fill("rep","assigned_rep");
+}
+
+function applyFilters(){
+  let m=model.value,s=sub_model.value,t=trim.value,
+      y=year.value,c=color.value,r=rep.value;
+
+  let regions=[...region.selectedOptions].map(o=>o.value);
+  let dealerTerm=document.getElementById("dealer_search").value.toLowerCase();
+
+  filtered=data.filter(d=>{
+    let f =
+      (!m||d.model==m) &&
+      (!s||d.sub_model==s) &&
+      (!t||d.trim==t) &&
+      (!y||d.year==y) &&
+      (!c||d.color==c) &&
+      (!r||d.assigned_rep==r) &&
+      (!regions.length||regions.includes(d.region));
+
+    let dmatch =
+      (!dealerTerm) ||
+      (d.dealer && d.dealer.toLowerCase().includes(dealerTerm)) ||
+      (d.bac && d.bac.toLowerCase().includes(dealerTerm));
+
+    return f && dmatch;
+  });
+
+  render();
+}
+
+function clearFilters(){
+  document.getElementById("dealer_search").value="";
+  filtered=data;
+  render();
+}
+
+function getScore(r){
+  let p=parseFloat(r.pressure_score||0);
+  let w=parseFloat(r.willingness_score||0);
+  let a=parseFloat(r.absorption_score||0);
+
+  if(mode==="pressure") return p;
+  if(mode==="buy") return a;
+  if(mode==="sell") return w;
+
+  return p;
+}
+
+function computeStats(group){
+  let ages=group.map(x=>parseFloat(x.true_age_days||0)).sort((a,b)=>a-b);
+  let total=ages.length;
+
+  let avg = total ? (ages.reduce((a,b)=>a+b,0)/total).toFixed(1) : 0;
+
+  let median = total
+    ? (total%2
+      ? ages[Math.floor(total/2)]
+      : ((ages[total/2-1]+ages[total/2])/2).toFixed(1))
+    : 0;
+
+  return {total, avg, median};
+}
+
+function buildDealerView(){
+
+  let tbody=document.querySelector("#table tbody");
+  tbody.innerHTML="";
+
+  let dealers=[...new Set(filtered.map(d=>d.dealer))];
+
+  dealers.forEach((dealer, index)=>{
+
+    let dealerId = "dealer_" + index;
+    let dealerRows = filtered.filter(d=>d.dealer===dealer);
+
+    let parent=document.createElement("tr");
+    parent.className="expand";
+    parent.onclick=()=>toggle(dealerId);
+
+    parent.innerHTML=`<td colspan="10">${dealer}</td>`;
+    tbody.appendChild(parent);
+
+    let grouped={};
+
+    dealerRows.forEach(r=>{
+      if(!grouped[r.model]) grouped[r.model]=[];
+      grouped[r.model].push(r);
+    });
+
+    Object.keys(grouped).forEach(model=>{
+      let stats=computeStats(grouped[model]);
+
+      grouped[model].forEach((r,i)=>{
+        let tr=document.createElement("tr");
+        tr.className="child";
+        tr.setAttribute("data-parent", dealerId);
+
+        tr.innerHTML=`
+<td></td>
+<td>${model}</td>
+<td>${i===0 ? stats.total : ""}</td>
+<td>${i===0 ? stats.avg : ""}</td>
+<td>${i===0 ? stats.median : ""}</td>
+<td>${r.vin}</td>
+<td>${r.year}</td>
+<td>${r.true_age_days}</td>
+<td>$${r.dealer_discount||0}</td>
+<td>${getScore(r)}</td>
+`;
+
+        tbody.appendChild(tr);
+      });
+    });
+
+  });
+}
+
+function toggle(id){
+  document.querySelectorAll(`[data-parent="${id}"]`)
+    .forEach(r=>{
+      r.style.display = r.style.display==="table-row" ? "none":"table-row";
+    });
+}
+
+function render(){
+
+  if(mode==="dealer"){
+    buildDealerView();
+    return;
+  }
+
+  let tbody=document.querySelector("#table tbody");
+  tbody.innerHTML="";
+
+  filtered.sort((a,b)=>getScore(b)-getScore(a));
+
+  let map={};
+
+  filtered.forEach(r=>{
+    let key=r.dealer+"||"+r.model;
+    if(!map[key]) map[key]=[];
+    map[key].push(r);
+  });
+
+  Object.values(map).forEach(group=>{
+    let stats=computeStats(group);
+
+    group.forEach((r,i)=>{
+      let tr=document.createElement("tr");
+
+      tr.innerHTML=`
+<td>${r.dealer}</td>
+<td>${r.model}</td>
+<td>${i===0 ? stats.total : ""}</td>
+<td>${i===0 ? stats.avg : ""}</td>
+<td>${i===0 ? stats.median : ""}</td>
+<td>${r.vin}</td>
+<td>${r.year}</td>
+<td>${r.true_age_days}</td>
+<td>$${r.dealer_discount||0}</td>
+<td>${getScore(r)}</td>
+`;
+
+      tbody.appendChild(tr);
+    });
+  });
+}
+
+function setMode(m){
+  mode=m;
+  document.querySelectorAll("button").forEach(b=>b.classList.remove("mode-active"));
+  document.getElementById("mode_"+m).classList.add("mode-active");
+  render();
+}
+
+loadData();
+
+</script>
+
+</body>
+</html>

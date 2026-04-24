@@ -1,0 +1,161 @@
+============================================================ 
+RUN START: Fri 04/03/2026 21:58:20.60 
+============================================================ 
+2026-04-03 21:58:21,135 | INFO    | ============================================================
+2026-04-03 21:58:21,136 | INFO    | SCRAPER V6 START (API FIRST)
+2026-04-03 21:58:21,136 | INFO    | ============================================================
+Traceback (most recent call last):
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 217, in <module>
+    main()
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 156, in main
+    dealers = load_dealers()
+              ^^^^^^^^^^^^^^
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 51, in load_dealers
+    with open(DEALERS_FILE, newline="", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\walt\\SCRAPER\\Inventory Scraper\\dealers.csv'
+ERROR at Fri 04/03/2026 21:58:21.22 
+============================================================ 
+RUN START: Fri 04/03/2026 22:09:46.60 
+============================================================ 
+2026-04-03 22:09:47,402 | INFO    | ============================================================
+2026-04-03 22:09:47,403 | INFO    | SCRAPER V6 START (API FIRST)
+2026-04-03 22:09:47,403 | INFO    | ============================================================
+Traceback (most recent call last):
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 217, in <module>
+    main()
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 171, in main
+    name = d["dealer_name"]
+           ~^^^^^^^^^^^^^^^
+KeyError: 'dealer_name'
+ERROR at Fri 04/03/2026 22:09:53.02 
+============================================================ 
+RUN START: Fri 04/03/2026 22:22:31.02 
+============================================================ 
+2026-04-03 22:22:31,221 | INFO    | ============================================================
+2026-04-03 22:22:31,221 | INFO    | SCRAPER V6 START (API FIRST)
+2026-04-03 22:22:31,221 | INFO    | ============================================================
+Traceback (most recent call last):
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 217, in <module>
+    main()
+  File "C:\Users\walt\SCRAPER\Inventory Scraper\inventory_scraper.py", line 171, in main
+    name = d["dealer_name"]
+           ~^^^^^^^^^^^^^^^
+KeyError: 'dealer_name'
+ERROR at Fri 04/03/2026 22:22:31.80 
+============================================================ 
+RUN START: Fri 04/03/2026 22:28:26.80 
+============================================================ 
+2026-04-03 22:28:26,995 | INFO    | ============================================================
+2026-04-03 22:28:26,995 | INFO    | SCRAPER V7 START (STABLE API)
+2026-04-03 22:28:26,995 | INFO    | ============================================================
+2026-04-03 22:28:26,998 | INFO    | [INFO] Loaded 25 dealers
+2026-04-03 22:28:27,455 | INFO    | Scraping MONTGOMERY CHEVROLET
+2026-04-03 22:28:27,787 | INFO    |   Loading: https://www.montgomery-chevrolet.com/searchnew.aspx
+2026-04-03 22:28:36,049 | WARNING |   No API data returned
+2026-04-03 22:28:36,063 | INFO    |   0 units
+2026-04-03 22:28:36,064 | INFO    | Scraping STERNBERG CHEVROLET
+2026-04-03 22:28:36,128 | INFO    |   Loading: https://www.sternbergchevrolet.com/searchnew.aspx
+2026-04-03 22:28:40,719 | WARNING |   No API data returned
+2026-04-03 22:28:40,832 | INFO    |   0 units
+2026-04-03 22:28:40,832 | INFO    | Scraping BOB HOOK CHEVROLET, INC.
+2026-04-03 22:28:40,885 | INFO    |   Loading: https://www.bobhook.com/searchnew.aspx
+2026-04-03 22:28:43,779 | WARNING |   No API data returned
+2026-04-03 22:28:43,836 | INFO    |   0 units
+2026-04-03 22:28:43,836 | INFO    | Scraping BIG M CHEVROLET
+2026-04-03 22:28:43,885 | INFO    |   Loading: https://www.bigmchevy.com/searchnew.aspx
+2026-04-03 22:28:46,808 | WARNING |   No API data returned
+2026-04-03 22:28:46,870 | INFO    |   0 units
+2026-04-03 22:28:46,870 | INFO    | Scraping BACHMAN AUTO GROUP, INC.
+2026-04-03 22:28:46,925 | INFO    |   Loading: https://www.bachmanchevrolet.com/searchnew.aspx
+2026-04-03 22:28:51,744 | WARNING |   No API data returned
+2026-04-03 22:28:51,753 | INFO    |   0 units
+2026-04-03 22:28:51,754 | INFO    | Scraping DON FRANKLIN BARDSTOWN CHEVROLET BUICK
+2026-04-03 22:28:51,803 | INFO    |   Loading: https://www.franklinfamilychevrolet.com/searchnew.aspx
+2026-04-03 22:28:55,069 | WARNING |   No API data returned
+2026-04-03 22:28:55,088 | INFO    |   0 units
+2026-04-03 22:28:55,088 | INFO    | Scraping HERB JONES AUTOMOTIVE GROUP
+2026-04-03 22:28:55,132 | INFO    |   Loading: https://herbjoneschevrolet.com/searchnew.aspx
+2026-04-03 22:28:58,578 | WARNING |   No API data returned
+2026-04-03 22:28:58,635 | INFO    |   0 units
+2026-04-03 22:28:58,636 | INFO    | Scraping FLAHERTY CHEVROLET
+2026-04-03 22:28:58,691 | INFO    |   Loading: https://www.flahertychevrolet.com/searchnew.aspx
+2026-04-03 22:29:01,596 | WARNING |   No API data returned
+2026-04-03 22:29:01,632 | INFO    |   0 units
+2026-04-03 22:29:01,632 | INFO    | Scraping COYLE CHEVROLET GMC
+2026-04-03 22:29:01,680 | INFO    |   Loading: https://www.coylecbg.com/searchnew.aspx
+2026-04-03 22:29:08,975 | WARNING |   No API data returned
+2026-04-03 22:29:09,007 | INFO    |   0 units
+2026-04-03 22:29:09,008 | INFO    | Scraping JOHN JONES CHEVROLET OF CORYDON, INC.
+2026-04-03 22:29:09,057 | INFO    |   Loading: https://www.johnjonescorydon.com/searchnew.aspx
+2026-04-03 22:29:13,350 | WARNING |   No API data returned
+2026-04-03 22:29:13,384 | INFO    |   0 units
+2026-04-03 22:29:13,384 | INFO    | Scraping CHAMPION CHEVROLET GMC
+2026-04-03 22:29:13,431 | INFO    |   Loading: https://www.driveachampion.com/searchnew.aspx
+2026-04-03 22:29:17,952 | WARNING |   No API data returned
+2026-04-03 22:29:18,020 | INFO    |   0 units
+2026-04-03 22:29:18,020 | INFO    | Scraping GLENN CHEVROLET
+2026-04-03 22:29:18,070 | INFO    |   Loading: https://www.glennchevrolet.com/searchnew.aspx
+2026-04-03 22:29:22,241 | WARNING |   No API data returned
+2026-04-03 22:29:22,267 | INFO    |   0 units
+2026-04-03 22:29:22,267 | INFO    | Scraping DAN POWERS CHEVROLET GMC
+2026-04-03 22:29:22,315 | INFO    |   Loading: https://www.danpowersgm.com/searchnew.aspx
+2026-04-03 22:29:24,840 | WARNING |   No API data returned
+2026-04-03 22:29:25,114 | INFO    |   0 units
+2026-04-03 22:29:25,115 | INFO    | Scraping JOHN JONES CHEVROLET OF SALEM
+2026-04-03 22:29:25,169 | INFO    |   Loading: https://www.johnjonessalem.com/searchnew.aspx
+2026-04-03 22:29:30,479 | WARNING |   No API data returned
+2026-04-03 22:29:30,532 | INFO    |   0 units
+2026-04-03 22:29:30,532 | INFO    | Scraping JOHN JONES CHEVROLET OF SCOTTSBURG, INC.
+2026-04-03 22:29:30,571 | INFO    |   Loading: https://www.johnjonesscottsburg.com/searchnew.aspx
+2026-04-03 22:29:42,123 | WARNING |   No API data returned
+2026-04-03 22:29:42,144 | INFO    |   0 units
+2026-04-03 22:29:42,144 | INFO    | Scraping DON FRANKLIN CHEVROLET GMC
+2026-04-03 22:29:42,190 | INFO    |   Loading: https://www.donfranklincampbellsville.com/searchnew.aspx
+2026-04-03 22:29:50,664 | WARNING |   No API data returned
+2026-04-03 22:29:50,812 | INFO    |   0 units
+2026-04-03 22:29:50,812 | INFO    | Scraping NEIL HUFFMAN CHEVROLET GMC OF FRANKFORT
+2026-04-03 22:29:50,857 | INFO    |   Loading: https://www.neilhuffmangmfrankfort.com/searchnew.aspx
+2026-04-03 22:29:53,145 | WARNING |   No API data returned
+2026-04-03 22:29:53,149 | INFO    |   0 units
+2026-04-03 22:29:53,149 | INFO    | Scraping BOB ALLEN CHEVROLET GMC, INC.
+2026-04-03 22:29:53,200 | INFO    |   Loading: https://www.boballenchevrolet.com/searchnew.aspx
+2026-04-03 22:29:56,561 | WARNING |   No API data returned
+2026-04-03 22:29:56,583 | INFO    |   0 units
+2026-04-03 22:29:56,584 | INFO    | Scraping MARSHALL CHEVROLET
+2026-04-03 22:29:56,630 | INFO    |   Loading: https://www.marshallchevroletky.com/searchnew.aspx
+2026-04-03 22:30:01,677 | WARNING |   No API data returned
+2026-04-03 22:30:01,695 | INFO    |   0 units
+2026-04-03 22:30:01,695 | INFO    | Scraping CHANDLER CHEVROLET
+2026-04-03 22:30:01,739 | INFO    |   Loading: https://www.chandlerchevcad.com/searchnew.aspx
+2026-04-03 22:30:04,251 | WARNING |   No API data returned
+2026-04-03 22:30:04,267 | INFO    |   0 units
+2026-04-03 22:30:04,267 | INFO    | Scraping BABCOCK MOTORS, INC.
+2026-04-03 22:30:04,313 | INFO    |   Loading: https://www.babcockmotors.com/searchnew.aspx
+2026-04-03 22:30:06,926 | WARNING |   No API data returned
+2026-04-03 22:30:06,979 | INFO    |   0 units
+2026-04-03 22:30:06,979 | INFO    | Scraping SUTHERLAND CHEVROLET, INC.
+2026-04-03 22:30:07,031 | INFO    |   Loading: https://www.sutherlandchevy.com/searchnew.aspx
+2026-04-03 22:30:09,590 | WARNING |   No API data returned
+2026-04-03 22:30:09,610 | INFO    |   0 units
+2026-04-03 22:30:09,610 | INFO    | Scraping DAN CUMMINS CHEVROLET BUICK OF GEORGETOWN
+2026-04-03 22:30:09,655 | INFO    |   Loading: https://www.dancumminschevybuick.com/searchnew.aspx
+2026-04-03 22:30:12,725 | WARNING |   No API data returned
+2026-04-03 22:30:12,752 | INFO    |   0 units
+2026-04-03 22:30:12,752 | INFO    | Scraping POYNTER CHEVROLET
+2026-04-03 22:30:12,801 | INFO    |   Loading: https://www.bobpoyntergm.com/searchnew.aspx
+2026-04-03 22:30:15,773 | WARNING |   No API data returned
+2026-04-03 22:30:15,836 | INFO    |   0 units
+2026-04-03 22:30:15,836 | INFO    | Scraping ROD HATFIELD CHEVROLET, LLC
+2026-04-03 22:30:15,884 | INFO    |   Loading: https://www.rodhatfieldchevy.com/searchnew.aspx
+2026-04-03 22:30:18,635 | WARNING |   No API data returned
+2026-04-03 22:30:18,680 | INFO    |   0 units
+2026-04-03 22:30:18,849 | INFO    | Inventory write complete
+2026-04-03 22:30:18,849 | INFO    | ============================================================
+
+Analysis complete:
+ - model_trim_breakdown.csv
+ - HOT_OPPORTUNITIES.csv
+
+RUN END: Fri 04/03/2026 22:30:22.52 
+============================================================ 

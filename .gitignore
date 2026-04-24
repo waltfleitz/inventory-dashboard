@@ -1,0 +1,11 @@
+# Ignore data files
+*.csv
+
+# Ignore test junk
+Scripts in Progress/
+Testing/
+
+# Ignore system files
+__pycache__/
+*.pyc
+.DS_Store

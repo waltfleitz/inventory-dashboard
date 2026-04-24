@@ -1,0 +1,185 @@
+2026-04-01 15:44:51 | INFO    | ============================================================
+2026-04-01 15:44:51 | INFO    | Inventory Scraper — run started
+2026-04-01 15:44:51 | INFO    | ============================================================
+2026-04-01 15:44:51 | INFO    | Scraping Sewell Chevrolet (https://www.sewellchevrolet.com)
+2026-04-01 15:45:12 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/new-inventory/index.htm — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /new-inventory/index.htm (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D542BE00>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:45:33 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/new-vehicles/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /new-vehicles/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D544BB10>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:45:54 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/new-inventory/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /new-inventory/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5624410>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:46:15 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/searchnew.aspx — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /searchnew.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5624690>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:46:36 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/new/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /new/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5624910>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:46:57 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/VehicleSearchResults?search=new — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /VehicleSearchResults?search=new (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5624B90>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:47:18 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/inventory/new/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /inventory/new/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5624E10>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:47:39 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/used-inventory/index.htm — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /used-inventory/index.htm (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625090>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:48:00 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/used-vehicles/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /used-vehicles/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625310>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:48:22 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/used-inventory/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /used-inventory/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625590>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:48:43 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/searchused.aspx — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /searchused.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625810>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:49:04 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/used/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /used/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625A90>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:49:25 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/VehicleSearchResults?search=used — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /VehicleSearchResults?search=used (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625D10>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:49:46 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/inventory/used/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /inventory/used/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5625F90>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:50:07 | WARNING |   Failed to fetch https://www.sewellchevrolet.com/inventory/ — HTTPSConnectionPool(host='www.sewellchevrolet.com', port=443): Max retries exceeded with url: /inventory/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000261D5626210>, 'Connection to www.sewellchevrolet.com timed out. (connect timeout=30)'))
+2026-04-01 15:50:07 | INFO    |   Sewell Chevrolet — 0 new VIN(s) to record
+2026-04-01 15:50:07 | INFO    | Scraping Bomnin Chevrolet (https://www.bomninchevrolet.com)
+2026-04-01 15:50:09 | INFO    |   /new-inventory/index.htm — found 12 VIN(s) [new]
+2026-04-01 15:50:10 | WARNING |   Failed to fetch https://www.bomninchevrolet.com/new-vehicles/ — 404 Client Error: Not Found for url: https://www.bomninchevrolet.com/new-vehicles/
+2026-04-01 15:50:11 | INFO    |   /new-inventory/ — found 12 VIN(s) [new]
+2026-04-01 15:50:12 | INFO    |   /searchnew.aspx — found 12 VIN(s) [unknown]
+2026-04-01 15:50:13 | INFO    |   /new/ — found 12 VIN(s) [new]
+2026-04-01 15:50:14 | INFO    |   /VehicleSearchResults?search=new — found 12 VIN(s) [unknown]
+2026-04-01 15:50:15 | WARNING |   Failed to fetch https://www.bomninchevrolet.com/inventory/new/ — 404 Client Error: Not Found for url: https://www.bomninchevrolet.com/inventory/new/
+2026-04-01 15:50:16 | INFO    |   /used-inventory/index.htm — found 24 VIN(s) [used]
+2026-04-01 15:50:17 | WARNING |   Failed to fetch https://www.bomninchevrolet.com/used-vehicles/ — 404 Client Error: Not Found for url: https://www.bomninchevrolet.com/used-vehicles/
+2026-04-01 15:50:18 | INFO    |   /used-inventory/ — found 24 VIN(s) [used]
+2026-04-01 15:50:19 | INFO    |   /searchused.aspx — found 24 VIN(s) [used]
+2026-04-01 15:50:20 | INFO    |   /used/ — found 24 VIN(s) [used]
+2026-04-01 15:50:21 | INFO    |   /VehicleSearchResults?search=used — found 24 VIN(s) [used]
+2026-04-01 15:50:23 | WARNING |   Failed to fetch https://www.bomninchevrolet.com/inventory/used/ — 404 Client Error: Not Found for url: https://www.bomninchevrolet.com/inventory/used/
+2026-04-01 15:50:24 | WARNING |   Failed to fetch https://www.bomninchevrolet.com/inventory/ — 404 Client Error: Not Found for url: https://www.bomninchevrolet.com/inventory/
+2026-04-01 15:50:24 | INFO    |   Bomnin Chevrolet — 36 new VIN(s) to record
+2026-04-01 15:50:24 | INFO    | Scraping Classic Chevrolet Grapevine (https://www.classicchevrolet.com)
+2026-04-01 15:50:24 | WARNING |   Failed to fetch https://www.classicchevrolet.com/new-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/new-inventory/index.htm
+2026-04-01 15:50:25 | WARNING |   Failed to fetch https://www.classicchevrolet.com/new-vehicles/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/new-vehicles/
+2026-04-01 15:50:26 | WARNING |   Failed to fetch https://www.classicchevrolet.com/new-inventory/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/new-inventory/
+2026-04-01 15:50:28 | WARNING |   Failed to fetch https://www.classicchevrolet.com/searchnew.aspx — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/searchnew.aspx
+2026-04-01 15:50:28 | WARNING |   Failed to fetch https://www.classicchevrolet.com/new/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/new/
+2026-04-01 15:50:30 | WARNING |   Failed to fetch https://www.classicchevrolet.com/VehicleSearchResults?search=new — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/VehicleSearchResults?search=new
+2026-04-01 15:50:30 | WARNING |   Failed to fetch https://www.classicchevrolet.com/inventory/new/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/inventory/new/
+2026-04-01 15:50:31 | WARNING |   Failed to fetch https://www.classicchevrolet.com/used-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/used-inventory/index.htm
+2026-04-01 15:50:31 | WARNING |   Failed to fetch https://www.classicchevrolet.com/used-vehicles/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/used-vehicles/
+2026-04-01 15:50:32 | WARNING |   Failed to fetch https://www.classicchevrolet.com/used-inventory/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/used-inventory/
+2026-04-01 15:50:32 | WARNING |   Failed to fetch https://www.classicchevrolet.com/searchused.aspx — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/searchused.aspx
+2026-04-01 15:50:32 | WARNING |   Failed to fetch https://www.classicchevrolet.com/used/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/used/
+2026-04-01 15:50:33 | WARNING |   Failed to fetch https://www.classicchevrolet.com/VehicleSearchResults?search=used — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/VehicleSearchResults?search=used
+2026-04-01 15:50:33 | WARNING |   Failed to fetch https://www.classicchevrolet.com/inventory/used/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/inventory/used/
+2026-04-01 15:50:34 | WARNING |   Failed to fetch https://www.classicchevrolet.com/inventory/ — 403 Client Error: Forbidden for url: https://www.classicchevrolet.com/inventory/
+2026-04-01 15:50:34 | INFO    |   Classic Chevrolet Grapevine — 0 new VIN(s) to record
+2026-04-01 15:50:34 | INFO    | Scraping MacMulkin Chevrolet (https://www.macmulkin.net)
+2026-04-01 15:50:34 | WARNING |   Failed to fetch https://www.macmulkin.net/new-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.macmulkin.net/new-inventory/index.htm
+2026-04-01 15:50:35 | WARNING |   Failed to fetch https://www.macmulkin.net/new-vehicles/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/new-vehicles/
+2026-04-01 15:50:35 | WARNING |   Failed to fetch https://www.macmulkin.net/new-inventory/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/new-inventory/
+2026-04-01 15:50:35 | WARNING |   Failed to fetch https://www.macmulkin.net/searchnew.aspx — 403 Client Error: Forbidden for url: https://www.macmulkin.net/searchnew.aspx
+2026-04-01 15:50:36 | WARNING |   Failed to fetch https://www.macmulkin.net/new/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/new/
+2026-04-01 15:50:36 | WARNING |   Failed to fetch https://www.macmulkin.net/VehicleSearchResults?search=new — 403 Client Error: Forbidden for url: https://www.macmulkin.net/VehicleSearchResults?search=new
+2026-04-01 15:50:37 | WARNING |   Failed to fetch https://www.macmulkin.net/inventory/new/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/inventory/new/
+2026-04-01 15:50:37 | WARNING |   Failed to fetch https://www.macmulkin.net/used-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.macmulkin.net/used-inventory/index.htm
+2026-04-01 15:50:37 | WARNING |   Failed to fetch https://www.macmulkin.net/used-vehicles/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/used-vehicles/
+2026-04-01 15:50:38 | WARNING |   Failed to fetch https://www.macmulkin.net/used-inventory/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/used-inventory/
+2026-04-01 15:50:38 | WARNING |   Failed to fetch https://www.macmulkin.net/searchused.aspx — 403 Client Error: Forbidden for url: https://www.macmulkin.net/searchused.aspx
+2026-04-01 15:50:39 | WARNING |   Failed to fetch https://www.macmulkin.net/used/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/used/
+2026-04-01 15:50:39 | WARNING |   Failed to fetch https://www.macmulkin.net/VehicleSearchResults?search=used — 403 Client Error: Forbidden for url: https://www.macmulkin.net/VehicleSearchResults?search=used
+2026-04-01 15:50:40 | WARNING |   Failed to fetch https://www.macmulkin.net/inventory/used/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/inventory/used/
+2026-04-01 15:50:40 | WARNING |   Failed to fetch https://www.macmulkin.net/inventory/ — 403 Client Error: Forbidden for url: https://www.macmulkin.net/inventory/
+2026-04-01 15:50:40 | INFO    |   MacMulkin Chevrolet — 0 new VIN(s) to record
+2026-04-01 15:50:40 | INFO    | Scraping Les Stanford Chevrolet (https://www.lesstanford.com)
+2026-04-01 15:50:42 | WARNING |   Failed to fetch https://www.lesstanford.com/new-vehicles/ — 404 Client Error: Not Found for url: https://www.lesstanford.com/new-vehicles/
+2026-04-01 15:50:45 | WARNING |   Failed to fetch https://www.lesstanford.com/VehicleSearchResults?search=new — 404 Client Error: Not Found for url: https://www.lesstanford.com/VehicleSearchResults?search=new
+2026-04-01 15:50:46 | WARNING |   Failed to fetch https://www.lesstanford.com/inventory/new/ — 404 Client Error: Not Found for url: https://www.lesstanford.com/inventory/new/
+2026-04-01 15:50:48 | WARNING |   Failed to fetch https://www.lesstanford.com/used-vehicles/ — 404 Client Error: Not Found for url: https://www.lesstanford.com/used-vehicles/
+2026-04-01 15:50:53 | WARNING |   Failed to fetch https://www.lesstanford.com/VehicleSearchResults?search=used — 404 Client Error: Not Found for url: https://www.lesstanford.com/VehicleSearchResults?search=used
+2026-04-01 15:50:54 | WARNING |   Failed to fetch https://www.lesstanford.com/inventory/used/ — 404 Client Error: Not Found for url: https://www.lesstanford.com/inventory/used/
+2026-04-01 15:50:55 | WARNING |   Failed to fetch https://www.lesstanford.com/inventory/ — 404 Client Error: Not Found for url: https://www.lesstanford.com/inventory/
+2026-04-01 15:50:55 | INFO    |   Les Stanford Chevrolet — 0 new VIN(s) to record
+2026-04-01 15:50:55 | INFO    | Scraping Rick Hendrick Chevrolet Norfolk (https://www.rickhendrickchevy.com)
+2026-04-01 15:50:56 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/new-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/new-inventory/index.htm
+2026-04-01 15:50:57 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/new-vehicles/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/new-vehicles/
+2026-04-01 15:50:57 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/new-inventory/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/new-inventory/
+2026-04-01 15:50:58 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/searchnew.aspx — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/searchnew.aspx
+2026-04-01 15:50:59 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/new/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/new/
+2026-04-01 15:51:00 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/VehicleSearchResults?search=new — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/VehicleSearchResults?search=new
+2026-04-01 15:51:00 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/inventory/new/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/inventory/new/
+2026-04-01 15:51:01 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/used-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/used-inventory/index.htm
+2026-04-01 15:51:01 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/used-vehicles/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/used-vehicles/
+2026-04-01 15:51:02 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/used-inventory/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/used-inventory/
+2026-04-01 15:51:03 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/searchused.aspx — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/searchused.aspx
+2026-04-01 15:51:04 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/used/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/used/
+2026-04-01 15:51:04 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/VehicleSearchResults?search=used — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/VehicleSearchResults?search=used
+2026-04-01 15:51:05 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/inventory/used/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/inventory/used/
+2026-04-01 15:51:06 | WARNING |   Failed to fetch https://www.rickhendrickchevy.com/inventory/ — 403 Client Error: Forbidden for url: https://www.rickhendrickchevy.com/inventory/
+2026-04-01 15:51:06 | INFO    |   Rick Hendrick Chevrolet Norfolk — 0 new VIN(s) to record
+2026-04-01 15:51:06 | INFO    | Scraping Mark Wahlberg Chevrolet Columbus (https://www.markwahlbergchevy.com)
+2026-04-01 15:51:07 | INFO    |   /new-inventory/index.htm — found 12 VIN(s) [new]
+2026-04-01 15:51:08 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/new-vehicles/ — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/new-vehicles/
+2026-04-01 15:51:09 | INFO    |   /new-inventory/ — found 12 VIN(s) [new]
+2026-04-01 15:51:10 | INFO    |   /searchnew.aspx — found 12 VIN(s) [unknown]
+2026-04-01 15:51:11 | INFO    |   /new/ — found 12 VIN(s) [new]
+2026-04-01 15:51:13 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/VehicleSearchResults?search=new — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/VehicleSearchResults?search=new
+2026-04-01 15:51:14 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/inventory/new/ — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/inventory/new/
+2026-04-01 15:51:15 | INFO    |   /used-inventory/index.htm — found 12 VIN(s) [used]
+2026-04-01 15:51:16 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/used-vehicles/ — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/used-vehicles/
+2026-04-01 15:51:17 | INFO    |   /used-inventory/ — found 12 VIN(s) [used]
+2026-04-01 15:51:18 | INFO    |   /searchused.aspx — found 12 VIN(s) [unknown]
+2026-04-01 15:51:19 | INFO    |   /used/ — found 12 VIN(s) [used]
+2026-04-01 15:51:20 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/VehicleSearchResults?search=used — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/VehicleSearchResults?search=used
+2026-04-01 15:51:21 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/inventory/used/ — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/inventory/used/
+2026-04-01 15:51:22 | WARNING |   Failed to fetch https://www.markwahlbergchevy.com/inventory/ — 404 Client Error: Not Found for url: https://www.markwahlbergchevy.com/inventory/
+2026-04-01 15:51:22 | INFO    |   Mark Wahlberg Chevrolet Columbus — 24 new VIN(s) to record
+2026-04-01 15:51:22 | INFO    | Scraping Courtesy Chevrolet Phoenix (https://www.courtesychev.com)
+2026-04-01 15:51:23 | WARNING |   Failed to fetch https://www.courtesychev.com/new-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.courtesychev.com/new-inventory/index.htm
+2026-04-01 15:51:23 | WARNING |   Failed to fetch https://www.courtesychev.com/new-vehicles/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/new-vehicles/
+2026-04-01 15:51:24 | WARNING |   Failed to fetch https://www.courtesychev.com/new-inventory/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/new-inventory/
+2026-04-01 15:51:25 | WARNING |   Failed to fetch https://www.courtesychev.com/searchnew.aspx — 403 Client Error: Forbidden for url: https://www.courtesychev.com/searchnew.aspx
+2026-04-01 15:51:25 | WARNING |   Failed to fetch https://www.courtesychev.com/new/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/new/
+2026-04-01 15:51:26 | WARNING |   Failed to fetch https://www.courtesychev.com/VehicleSearchResults?search=new — 403 Client Error: Forbidden for url: https://www.courtesychev.com/VehicleSearchResults?search=new
+2026-04-01 15:51:26 | WARNING |   Failed to fetch https://www.courtesychev.com/inventory/new/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/inventory/new/
+2026-04-01 15:51:27 | WARNING |   Failed to fetch https://www.courtesychev.com/used-inventory/index.htm — 403 Client Error: Forbidden for url: https://www.courtesychev.com/used-inventory/index.htm
+2026-04-01 15:51:28 | WARNING |   Failed to fetch https://www.courtesychev.com/used-vehicles/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/used-vehicles/
+2026-04-01 15:51:29 | WARNING |   Failed to fetch https://www.courtesychev.com/used-inventory/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/used-inventory/
+2026-04-01 15:51:30 | WARNING |   Failed to fetch https://www.courtesychev.com/searchused.aspx — 403 Client Error: Forbidden for url: https://www.courtesychev.com/searchused.aspx
+2026-04-01 15:51:30 | WARNING |   Failed to fetch https://www.courtesychev.com/used/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/used/
+2026-04-01 15:51:31 | WARNING |   Failed to fetch https://www.courtesychev.com/VehicleSearchResults?search=used — 403 Client Error: Forbidden for url: https://www.courtesychev.com/VehicleSearchResults?search=used
+2026-04-01 15:51:32 | WARNING |   Failed to fetch https://www.courtesychev.com/inventory/used/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/inventory/used/
+2026-04-01 15:51:32 | WARNING |   Failed to fetch https://www.courtesychev.com/inventory/ — 403 Client Error: Forbidden for url: https://www.courtesychev.com/inventory/
+2026-04-01 15:51:32 | INFO    |   Courtesy Chevrolet Phoenix — 0 new VIN(s) to record
+2026-04-01 15:51:32 | INFO    | Scraping Feldman Chevrolet Livonia (https://www.feldmanchevy.com)
+2026-04-01 15:51:34 | INFO    |   /new-inventory/index.htm — found 10 VIN(s) [new]
+2026-04-01 15:51:35 | WARNING |   Failed to fetch https://www.feldmanchevy.com/new-vehicles/ — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/new-vehicles/
+2026-04-01 15:51:36 | INFO    |   /new-inventory/ — found 10 VIN(s) [new]
+2026-04-01 15:51:37 | INFO    |   /searchnew.aspx — found 10 VIN(s) [unknown]
+2026-04-01 15:51:38 | INFO    |   /new/ — found 10 VIN(s) [new]
+2026-04-01 15:51:39 | WARNING |   Failed to fetch https://www.feldmanchevy.com/VehicleSearchResults?search=new — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/VehicleSearchResults?search=new
+2026-04-01 15:51:40 | WARNING |   Failed to fetch https://www.feldmanchevy.com/inventory/new/ — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/inventory/new/
+2026-04-01 15:51:42 | INFO    |   /used-inventory/index.htm — found 10 VIN(s) [used]
+2026-04-01 15:51:43 | WARNING |   Failed to fetch https://www.feldmanchevy.com/used-vehicles/ — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/used-vehicles/
+2026-04-01 15:51:44 | INFO    |   /used-inventory/ — found 10 VIN(s) [used]
+2026-04-01 15:51:45 | INFO    |   /searchused.aspx — found 10 VIN(s) [unknown]
+2026-04-01 15:51:46 | INFO    |   /used/ — found 10 VIN(s) [used]
+2026-04-01 15:51:47 | WARNING |   Failed to fetch https://www.feldmanchevy.com/VehicleSearchResults?search=used — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/VehicleSearchResults?search=used
+2026-04-01 15:51:48 | WARNING |   Failed to fetch https://www.feldmanchevy.com/inventory/used/ — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/inventory/used/
+2026-04-01 15:51:49 | WARNING |   Failed to fetch https://www.feldmanchevy.com/inventory/ — 404 Client Error: Not Found for url: https://www.feldmanchevy.com/inventory/
+2026-04-01 15:51:49 | INFO    |   Feldman Chevrolet Livonia — 1 new VIN(s) to record
+2026-04-01 15:51:49 | INFO    | Scraping Team Chevrolet Charlotte (https://www.teamchevrolet.com)
+2026-04-01 15:51:53 | WARNING |   Failed to fetch https://www.teamchevrolet.com/new-inventory/index.htm — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /new-inventory/index.htm (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5625950>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/new-vehicles/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /new-vehicles/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5625310>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/new-inventory/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /new-inventory/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5625090>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/searchnew.aspx — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /searchnew.aspx (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624E10>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/new/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /new/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624B90>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/VehicleSearchResults?search=new — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /VehicleSearchResults?search=new (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624910>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/inventory/new/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /inventory/new/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624690>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/used-inventory/index.htm — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /used-inventory/index.htm (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624050>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/used-vehicles/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /used-vehicles/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D5624410>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/used-inventory/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /used-inventory/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D56242D0>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/searchused.aspx — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /searchused.aspx (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D544BED0>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/used/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /used/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D544B610>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/VehicleSearchResults?search=used — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /VehicleSearchResults?search=used (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D544B4D0>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/inventory/used/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /inventory/used/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D544BB10>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | WARNING |   Failed to fetch https://www.teamchevrolet.com/inventory/ — HTTPSConnectionPool(host='www.teamchevrolet.com', port=443): Max retries exceeded with url: /inventory/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000261D544B9D0>: Failed to resolve 'www.teamchevrolet.com' ([Errno 11002] getaddrinfo failed)"))
+2026-04-01 15:51:54 | INFO    |   Team Chevrolet Charlotte — 0 new VIN(s) to record
+2026-04-01 15:51:54 | INFO    | ------------------------------------------------------------
+2026-04-01 15:51:54 | INFO    | Run complete. New VINs recorded today: 61
+2026-04-01 15:51:54 | INFO    | History file: C:\Users\walt\SCRAPER\Inventory Scraper\inventory_history.csv
+2026-04-01 15:51:54 | INFO    | ============================================================
+2026-04-01 15:51:55 | INFO    | ==============================================================
+2026-04-01 15:51:55 | INFO    | Inventory Scraper — run started
+2026-04-01 15:51:55 | WARNING | Playwright not installed. Browser scraping is DISABLED.
+2026-04-01 15:51:55 | WARNING | Install it for best results:
+2026-04-01 15:51:55 | WARNING |   pip install playwright
+2026-04-01 15:51:55 | WARNING |   playwright install chromium
+2026-04-01 15:51:55 | INFO    | ==============================================================
+2026-04-01 15:51:55 | INFO    | Scraping: Sewell Chevrolet
+2026-04-01 16:05:58 | INFO    | ==============================================================
+2026-04-01 16:05:58 | INFO    | Inventory Scraper — run started
+2026-04-01 16:05:58 | WARNING | Playwright NOT installed — browser scraping disabled.
+2026-04-01 16:05:58 | WARNING | Many dealer sites require it. Install with:
+2026-04-01 16:05:58 | WARNING |   pip install playwright
+2026-04-01 16:05:58 | WARNING |   playwright install chromium
+2026-04-01 16:05:58 | INFO    | ==============================================================
+2026-04-01 16:05:58 | INFO    | Scraping: Sewell Chevrolet

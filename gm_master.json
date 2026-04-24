@@ -1,0 +1,956 @@
+[
+  {
+    "dealerName": "CENTRAL CHEVROLET, INC.",
+    "dealerUrl": "https://www.centralchevyauto.com",
+    "city": "West Springfield",
+    "state": "MA",
+    "postalCode": "01089",
+    "bac": "114952",
+    "dealerCode": 32148
+  },
+  {
+    "dealerName": "BALISE CHEVROLET GMC",
+    "dealerUrl": "https://www.balisechevroletgmc.com",
+    "city": "Springfield",
+    "state": "MA",
+    "postalCode": "01105",
+    "bac": "114920",
+    "dealerCode": 32027
+  },
+  {
+    "dealerName": "BERTERA CHEVROLET INC",
+    "dealerUrl": "https://www.berterachevy.com",
+    "city": "Palmer",
+    "state": "MA",
+    "postalCode": "01069",
+    "bac": "161165",
+    "dealerCode": 32066
+  },
+  {
+    "dealerName": "VERNON CHEVROLET",
+    "dealerUrl": "https://www.vernonchevrolet.com",
+    "city": "Vernon Rockville",
+    "state": "CT",
+    "postalCode": "06066",
+    "bac": "294908",
+    "dealerCode": 11666
+  },
+  {
+    "dealerName": "BURKE CHEVROLET",
+    "dealerUrl": "https://www.burkechevy.com",
+    "city": "Northampton",
+    "state": "MA",
+    "postalCode": "01060",
+    "bac": "115446",
+    "dealerCode": 32573
+  },
+  {
+    "dealerName": "EAST HARTFORD CHEVROLET",
+    "dealerUrl": "https://www.easthartfordchevrolet.com",
+    "city": "East Hartford",
+    "state": "CT",
+    "postalCode": "06108",
+    "bac": "325319",
+    "dealerCode": 2314
+  },
+  {
+    "dealerName": "O'NEILL'S CHEVROLET, INCORPORATED",
+    "dealerUrl": "https://www.oneillschevrolet.com",
+    "city": "Avon",
+    "state": "CT",
+    "postalCode": "06001",
+    "bac": "111158",
+    "dealerCode": 2363
+  },
+  {
+    "dealerName": "DAVIDSON CHEVROLET, INC.",
+    "dealerUrl": "https://www.davidsonchevrolet.com",
+    "city": "Canton",
+    "state": "CT",
+    "postalCode": "06019",
+    "bac": "111121",
+    "dealerCode": 2085
+  },
+  {
+    "dealerName": "NORTHWEST HILLS CHEVROLET GMC",
+    "dealerUrl": "https://www.northwesthillsdealerships.com",
+    "city": "Torrington",
+    "state": "CT",
+    "postalCode": "06790",
+    "bac": "163979",
+    "dealerCode": 2147
+  },
+  {
+    "dealerName": "TERRYVILLE CHEVROLET, LLC",
+    "dealerUrl": "https://www.terryvillechevy.com",
+    "city": "Terryville",
+    "state": "CT",
+    "postalCode": "06786",
+    "bac": "169813",
+    "dealerCode": 2437
+  },
+  {
+    "dealerName": "MIDDLETOWN CHEVROLET",
+    "dealerUrl": "https://www.chevroletofmiddletown.com",
+    "city": "Middletown",
+    "state": "CT",
+    "postalCode": "06457",
+    "bac": "309485",
+    "dealerCode": 2290
+  },
+  {
+    "dealerName": "GREENFIELD CHEVROLET",
+    "dealerUrl": "https://www.greenfieldchevyma.com",
+    "city": "Greenfield",
+    "state": "MA",
+    "postalCode": "01301",
+    "bac": "330392",
+    "dealerCode": 32084
+  },
+  {
+    "dealerName": "CARGILL CHEVROLET",
+    "dealerUrl": "https://www.cargillchev.com/",
+    "city": "Putnam",
+    "state": "CT",
+    "postalCode": "06260",
+    "bac": "322653",
+    "dealerCode": 32110
+  },
+  {
+    "dealerName": "RICHARD CHEVROLET, INC.",
+    "dealerUrl": "https://www.richardchevy.com",
+    "city": "Cheshire",
+    "state": "CT",
+    "postalCode": "06410",
+    "bac": "111145",
+    "dealerCode": 2413
+  },
+  {
+    "dealerName": "DIAMOND CHEVROLET GMC",
+    "dealerUrl": "https://www.choosediamond.com",
+    "city": "Auburn",
+    "state": "MA",
+    "postalCode": "01501",
+    "bac": "114932",
+    "dealerCode": 32226
+  },
+  {
+    "dealerName": "LOEHMANN-BLASIUS CHEVROLET, INC.",
+    "dealerUrl": "https://www.blasiuschevrolet.com",
+    "city": "Waterbury",
+    "state": "CT",
+    "postalCode": "06705",
+    "bac": "111153",
+    "dealerCode": 2316
+  },
+  {
+    "dealerName": "VACHON CHEVROLET, INC.",
+    "dealerUrl": "https://www.checkvachonchevy.com",
+    "city": "Brooklyn",
+    "state": "CT",
+    "postalCode": "06234",
+    "bac": "308802",
+    "dealerCode": 31280
+  },
+  {
+    "dealerName": "EXECUTIVE CHEVROLET",
+    "dealerUrl": "https://www.executivechevy.com",
+    "city": "Wallingford",
+    "state": "CT",
+    "postalCode": "06492",
+    "bac": "307621",
+    "dealerCode": 2484
+  },
+  {
+    "dealerName": "BEDARD BROS CHEVROLET",
+    "dealerUrl": "https://www.bedardbroschevrolet.com",
+    "city": "Cheshire",
+    "state": "MA",
+    "postalCode": "01225",
+    "bac": "241284",
+    "dealerCode": 32747
+  },
+  {
+    "dealerName": "SALVADORE CHEVROLET",
+    "dealerUrl": "https://www.salvadorechevy.com/",
+    "city": "Gardner",
+    "state": "MA",
+    "postalCode": "01440",
+    "bac": "114938",
+    "dealerCode": 32658
+  },
+  {
+    "dealerName": "WOW WOODBURY CHEVROLET",
+    "dealerUrl": "https://www.woodburychevrolet.com",
+    "city": "Woodbury",
+    "state": "CT",
+    "postalCode": "06798",
+    "bac": "311956",
+    "dealerCode": 2507
+  },
+  {
+    "dealerName": "SCRANTON CHEVROLET OF NORWICH, INC.",
+    "dealerUrl": "https://www.scrantonchevy.com",
+    "city": "Norwich",
+    "state": "CT",
+    "postalCode": "06360",
+    "bac": "293650",
+    "dealerCode": 32556
+  },
+  {
+    "dealerName": "HAMDEN CHEVROLET",
+    "dealerUrl": "https://www.hamdenchevy.com",
+    "city": "Hamden",
+    "state": "CT",
+    "postalCode": "06517",
+    "bac": "317463",
+    "dealerCode": 22215
+  },
+  {
+    "dealerName": "GROSSMAN CHEVROLET INC.",
+    "dealerUrl": "https://www.grossmanchevy.com",
+    "city": "Old Saybrook",
+    "state": "CT",
+    "postalCode": "06475",
+    "bac": "111137",
+    "dealerCode": 2405
+  },
+  {
+    "dealerName": "IMPERIAL CHEVROLET",
+    "dealerUrl": "https://www.imperialchevrolet.net",
+    "city": "Mendon",
+    "state": "MA",
+    "postalCode": "01756",
+    "bac": "114966",
+    "dealerCode": 32598
+  },
+  {
+    "dealerName": "COLONIAL CHEVROLET",
+    "dealerUrl": "https://www.colonial-chevy.com/",
+    "city": "New London",
+    "state": "CT",
+    "postalCode": "06320",
+    "bac": "326378",
+    "dealerCode": 2460
+  },
+  {
+    "dealerName": "BOBBY CRABTREE CHEVROLET",
+    "dealerUrl": "https://www.crabtreechevrolet.com",
+    "city": "East Haven",
+    "state": "CT",
+    "postalCode": "06512",
+    "bac": "329742",
+    "dealerCode": 3343
+  },
+  {
+    "dealerName": "COLONIAL CHEVROLET-WEST, INC.",
+    "dealerUrl": "https://www.colonial-west.com",
+    "city": "Fitchburg",
+    "state": "MA",
+    "postalCode": "01420",
+    "bac": "172128",
+    "dealerCode": 32466
+  },
+  {
+    "dealerName": "AUTO MALL, INC.",
+    "dealerUrl": "https://www.brattautomall.com",
+    "city": "Brattleboro",
+    "state": "VT",
+    "postalCode": "05301",
+    "bac": "115461",
+    "dealerCode": 32445
+  },
+  {
+    "dealerName": "RUGE'S CHEVROLET",
+    "dealerUrl": "https://www.rugeschevrolet.com",
+    "city": "Millbrook",
+    "state": "NY",
+    "postalCode": "12545",
+    "bac": "295630",
+    "dealerCode": 2149
+  },
+  {
+    "dealerName": "COPELAND CHEVROLET HUDSON",
+    "dealerUrl": "https://copelandchevrolethudson.com",
+    "city": "Hudson",
+    "state": "MA",
+    "postalCode": "01749",
+    "bac": "327024",
+    "dealerCode": 32244
+  },
+  {
+    "dealerName": "TASCA CHEVROLET",
+    "dealerUrl": "https://www.tascachevy.com",
+    "city": "Woonsocket",
+    "state": "RI",
+    "postalCode": "02895",
+    "bac": "291114",
+    "dealerCode": 35652
+  },
+  {
+    "dealerName": "BOB VALENTI CHEVROLET, INC.",
+    "dealerUrl": "https://www.valentichevy.com",
+    "city": "Mystic",
+    "state": "CT",
+    "postalCode": "06355",
+    "bac": "111168",
+    "dealerCode": 2485
+  },
+  {
+    "dealerName": "HURD AUTO MALL",
+    "dealerUrl": "https://www.hurdchevrolet.com",
+    "city": "Johnston",
+    "state": "RI",
+    "postalCode": "02919",
+    "bac": "297074",
+    "dealerCode": 32305
+  },
+  {
+    "dealerName": "INGERSOLL AUTO OF DANBURY",
+    "dealerUrl": "https://www.ingersollautoofdanbury.com",
+    "city": "Danbury",
+    "state": "CT",
+    "postalCode": "06810",
+    "bac": "259688",
+    "dealerCode": 14014
+  },
+  {
+    "dealerName": "INGERSOLL AUTO OF PAWLING, LLC",
+    "dealerUrl": "https://www.ingersollautoofpawling.com",
+    "city": "Pawling",
+    "state": "NY",
+    "postalCode": "12564",
+    "bac": "286663",
+    "dealerCode": 11306
+  },
+  {
+    "dealerName": "WALIER CHEVROLET",
+    "dealerUrl": "https://www.walierchevy.com",
+    "city": "Keene",
+    "state": "NH",
+    "postalCode": "03431",
+    "bac": "115009",
+    "dealerCode": 32680
+  },
+  {
+    "dealerName": "CHEVROLET OF MILFORD",
+    "dealerUrl": "https://www.chevroletofmilford.com",
+    "city": "Milford",
+    "state": "CT",
+    "postalCode": "06460",
+    "bac": "317396",
+    "dealerCode": 4210
+  },
+  {
+    "dealerName": "HERB CONNOLLY CHEVROLET",
+    "dealerUrl": "https://www.herbconnollychevrolet.com",
+    "city": "Framingham",
+    "state": "MA",
+    "postalCode": "01702",
+    "bac": "117930",
+    "dealerCode": 32170
+  },
+  {
+    "dealerName": "CHEVROLET OF BENNINGTON",
+    "dealerUrl": "https://www.chevroletofbennington.com",
+    "city": "Bennington",
+    "state": "VT",
+    "postalCode": "05201",
+    "bac": "330202",
+    "dealerCode": 13156
+  },
+  {
+    "dealerName": "BALISE CHEVROLET OF WARWICK",
+    "dealerUrl": "https://www.balisechevroletri.com",
+    "city": "Warwick",
+    "state": "RI",
+    "postalCode": "02888",
+    "bac": "224125",
+    "dealerCode": 35377
+  },
+  {
+    "dealerName": "SAWYER CHEVROLET, INC.",
+    "dealerUrl": "https://www.sawyerchevy.com",
+    "city": "Catskill",
+    "state": "NY",
+    "postalCode": "12414",
+    "bac": "115409",
+    "dealerCode": 32064
+  },
+  {
+    "dealerName": "CHEVROLET BUICK GMC OF ATTLEBORO",
+    "dealerUrl": "https://www.chevroletbuickgmcofattleboro.com",
+    "city": "Attleboro",
+    "state": "MA",
+    "postalCode": "02703",
+    "bac": "286194",
+    "dealerCode": 32435
+  },
+  {
+    "dealerName": "PAUL MASSE CHEVROLET, INC.",
+    "dealerUrl": "https://www.paulmasseeastprovidence.com",
+    "city": "East Providence",
+    "state": "RI",
+    "postalCode": "02914",
+    "bac": "115082",
+    "dealerCode": 32175
+  },
+  {
+    "dealerName": "COLONIAL CHEVROLET",
+    "dealerUrl": "https://www.buycolonialchevrolet.com",
+    "city": "Acton",
+    "state": "MA",
+    "postalCode": "01720",
+    "bac": "114978",
+    "dealerCode": 32002
+  },
+  {
+    "dealerName": "ROMEO CHEVROLET BUICK GMC, LLC",
+    "dealerUrl": "https://www.romeocars.com",
+    "city": "Lake Katrine",
+    "state": "NY",
+    "postalCode": "12449",
+    "bac": "168006",
+    "dealerCode": 2136
+  },
+  {
+    "dealerName": "MARITIME CHEVROLET",
+    "dealerUrl": "https://www.maritimechevy.com",
+    "city": "Fairfield",
+    "state": "CT",
+    "postalCode": "06824",
+    "bac": "294319",
+    "dealerCode": 2430
+  },
+  {
+    "dealerName": "PAUL MASSE CHEVROLET SOUTH, INC.",
+    "dealerUrl": "https://www.paulmassewakefield.com",
+    "city": "Wakefield",
+    "state": "RI",
+    "postalCode": "02879",
+    "bac": "240868",
+    "dealerCode": 32379
+  },
+  {
+    "dealerName": "DEPAULA CHEVROLET",
+    "dealerUrl": "https://www.depaulachevrolet.com",
+    "city": "Albany",
+    "state": "NY",
+    "postalCode": "12206",
+    "bac": "115296",
+    "dealerCode": 32118
+  },
+  {
+    "dealerName": "HEALEY CHEVROLET, INC.",
+    "dealerUrl": "https://www.healeychevrolet.com",
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "postalCode": "12601",
+    "bac": "111170",
+    "dealerCode": 2258
+  },
+  {
+    "dealerName": "MACMULKIN CHEVROLET CADILLAC",
+    "dealerUrl": "https://www.macmulkin.net",
+    "city": "Nashua",
+    "state": "NH",
+    "postalCode": "03060",
+    "bac": "115021",
+    "dealerCode": 32449
+  },
+  {
+    "dealerName": "LANGWAY CHEVROLET OF MANCHESTER",
+    "dealerUrl": "https://langwaychevroletofmanchester.com",
+    "city": "Manchester Center",
+    "state": "VT",
+    "postalCode": "05255",
+    "bac": "289402",
+    "dealerCode": 32211
+  },
+  {
+    "dealerName": "NUCAR CHEVROLET OF LOWELL",
+    "dealerUrl": "https://www.nucarchevroletlowell.com",
+    "city": "Lowell",
+    "state": "MA",
+    "postalCode": "01852",
+    "bac": "316950",
+    "dealerCode": 32100
+  },
+  {
+    "dealerName": "QUIRK CHEVROLET",
+    "dealerUrl": "https://www.quirkchevynh.com/",
+    "city": "Manchester",
+    "state": "NH",
+    "postalCode": "03103",
+    "bac": "236646",
+    "dealerCode": 32460
+  },
+  {
+    "dealerName": "MCGOVERN CHEVROLET",
+    "dealerUrl": "https://www.mcgovernchevroletofarlington.com/",
+    "city": "Arlington",
+    "state": "MA",
+    "postalCode": "02476",
+    "bac": "333207",
+    "dealerCode": 38536
+  },
+  {
+    "dealerName": "NUCAR CHEVROLET OF NORWOOD",
+    "dealerUrl": "https://www.nucarchevroletnorwood.com",
+    "city": "Norwood",
+    "state": "MA",
+    "postalCode": "02062",
+    "bac": "298647",
+    "dealerCode": 32666
+  },
+  {
+    "dealerName": "NUCAR CHEVROLET OF WOBURN",
+    "dealerUrl": "https://www.nucarchevroletwoburn.com",
+    "city": "Woburn",
+    "state": "MA",
+    "postalCode": "01801",
+    "bac": "316951",
+    "dealerCode": 32412
+  },
+  {
+    "dealerName": "BETLEY CHEVROLET, INC.",
+    "dealerUrl": "https://www.betley.com/",
+    "city": "Derry",
+    "state": "NH",
+    "postalCode": "03038",
+    "bac": "114998",
+    "dealerCode": 32061
+  },
+  {
+    "dealerName": "KEY CHEVROLET GMC OF NEWPORT",
+    "dealerUrl": "http://www.keychevroletgmcofnewport.com/",
+    "city": "Newport",
+    "state": "NH",
+    "postalCode": "03773",
+    "bac": "317249",
+    "dealerCode": 32416
+  },
+  {
+    "dealerName": "BILL DELUCA CHEVROLET",
+    "dealerUrl": "https://www.billdelucachevrolet.com",
+    "city": "Andover",
+    "state": "MA",
+    "postalCode": "01810",
+    "bac": "114983",
+    "dealerCode": 32225
+  },
+  {
+    "dealerName": "COMMONWEALTH CHEVROLET, INC.",
+    "dealerUrl": "https://www.commonwealthchevrolet.com",
+    "city": "Lawrence",
+    "state": "MA",
+    "postalCode": "01841",
+    "bac": "114926",
+    "dealerCode": 32268
+  },
+  {
+    "dealerName": "BENSON'S CHEVROLET, INC.",
+    "dealerUrl": "https://www.bensonschevy.com",
+    "city": "Ludlow",
+    "state": "VT",
+    "postalCode": "05149",
+    "bac": "115044",
+    "dealerCode": 32049
+  },
+  {
+    "dealerName": "LIBERTY CHEVROLET, INC.",
+    "dealerUrl": "https://www.libertychevy.com",
+    "city": "Wakefield",
+    "state": "MA",
+    "postalCode": "01880",
+    "bac": "114955",
+    "dealerCode": 32385
+  },
+  {
+    "dealerName": "DENOOYER CHEVROLET, INC.",
+    "dealerUrl": "https://www.denooyerchevrolet.com",
+    "city": "Albany",
+    "state": "NY",
+    "postalCode": "12205",
+    "bac": "115294",
+    "dealerCode": 32132
+  },
+  {
+    "dealerName": "MCGEE CHEVROLET OF GREENWICH",
+    "dealerUrl": "https://www.mcgeechevroletgreenwich.com",
+    "city": "Greenwich",
+    "state": "NY",
+    "postalCode": "12834",
+    "bac": "332199",
+    "dealerCode": 95511
+  },
+  {
+    "dealerName": "BILL DELUCA CHEVROLET-GMC, INC.",
+    "dealerUrl": "https://www.delucachevrolet.com/",
+    "city": "Haverhill",
+    "state": "MA",
+    "postalCode": "01832",
+    "bac": "114968",
+    "dealerCode": 32223
+  },
+  {
+    "dealerName": "PRIDE CHEVROLET, INC.",
+    "dealerUrl": "https://www.pridechevy.com",
+    "city": "Lynn",
+    "state": "MA",
+    "postalCode": "01905",
+    "bac": "167263",
+    "dealerCode": 32056
+  },
+  {
+    "dealerName": "COPELAND CHEVROLET",
+    "dealerUrl": "https://www.copelandchevrolet.com",
+    "city": "Brockton",
+    "state": "MA",
+    "postalCode": "02301",
+    "bac": "287041",
+    "dealerCode": 32224
+  },
+  {
+    "dealerName": "QUIRK CHEVROLET",
+    "dealerUrl": "https://www.quirkchevy.com",
+    "city": "Braintree",
+    "state": "MA",
+    "postalCode": "02184",
+    "bac": "114934",
+    "dealerCode": 32203
+  },
+  {
+    "dealerName": "HERB CHAMBERS CHEVROLET OF DANVERS",
+    "dealerUrl": "https://www.herbchamberschevrolet.com",
+    "city": "Danvers",
+    "state": "MA",
+    "postalCode": "01923",
+    "bac": "331456",
+    "dealerCode": 34044
+  },
+  {
+    "dealerName": "BANKS CHEVROLET-CADILLAC, INC.",
+    "dealerUrl": "https://www.banksautoschevrolet.com/",
+    "city": "Concord",
+    "state": "NH",
+    "postalCode": "03301",
+    "bac": "114996",
+    "dealerCode": 32033
+  },
+  {
+    "dealerName": "MCLAUGHLIN CHEVROLET, INC.",
+    "dealerUrl": "https://www.mclaughlinchevy.com",
+    "city": "Whitman",
+    "state": "MA",
+    "postalCode": "02382",
+    "bac": "114957",
+    "dealerCode": 32483
+  },
+  {
+    "dealerName": "BEST CHEVROLET, INC.",
+    "dealerUrl": "https://www.thebestchevy.com",
+    "city": "Hingham",
+    "state": "MA",
+    "postalCode": "02043",
+    "bac": "114924",
+    "dealerCode": 32058
+  },
+  {
+    "dealerName": "MCKAY CHEVROLET",
+    "dealerUrl": "https://www.mckaychevrolet.com",
+    "city": "Raynham",
+    "state": "MA",
+    "postalCode": "02767",
+    "bac": "206441",
+    "dealerCode": 32135
+  },
+  {
+    "dealerName": "MOHAWK CHEVROLET",
+    "dealerUrl": "https://www.mohawkchevrolet.com",
+    "city": "Ballston Spa",
+    "state": "NY",
+    "postalCode": "12020",
+    "bac": "313071",
+    "dealerCode": 33334
+  },
+  {
+    "dealerName": "DEVAN CHEVROLET OF WILTON",
+    "dealerUrl": "https://www.chevroletofwilton.com",
+    "city": "Wilton",
+    "state": "CT",
+    "postalCode": "06897",
+    "bac": "224502",
+    "dealerCode": 2533
+  },
+  {
+    "dealerName": "HEALEY BROTHERS CHEVROLET",
+    "dealerUrl": "https://www.healeybrotherschevrolet.com",
+    "city": "Newburgh",
+    "state": "NY",
+    "postalCode": "12550",
+    "bac": "331990",
+    "dealerCode": 2070
+  },
+  {
+    "dealerName": "ROMEO CHEVROLET OF GLENS FALLS, LLC",
+    "dealerUrl": "https://www.romeochevrolet.com/",
+    "city": "Glens Falls",
+    "state": "NY",
+    "postalCode": "12801",
+    "bac": "329786",
+    "dealerCode": 32089
+  },
+  {
+    "dealerName": "MANGINO CHEVROLET, INC.",
+    "dealerUrl": "https://www.manginochevy.com",
+    "city": "Amsterdam",
+    "state": "NY",
+    "postalCode": "12010",
+    "bac": "208767",
+    "dealerCode": 13560
+  },
+  {
+    "dealerName": "THE KARL CHEVROLET COMPANY",
+    "dealerUrl": "https://www.karlchevy.com",
+    "city": "New Canaan",
+    "state": "CT",
+    "postalCode": "06840",
+    "bac": "111148",
+    "dealerCode": 2289
+  },
+  {
+    "dealerName": "MOUNT KISCO CHEVROLET",
+    "dealerUrl": "https://www.mtkiscochevrolet.com",
+    "city": "Mount Kisco",
+    "state": "NY",
+    "postalCode": "10549",
+    "bac": "303129",
+    "dealerCode": 2036
+  },
+  {
+    "dealerName": "FREEDOM CHEVROLET",
+    "dealerUrl": "https://freedomchevroletauto.com",
+    "city": "Fort Montgomery",
+    "state": "NY",
+    "postalCode": "10922",
+    "bac": "327099",
+    "dealerCode": 55657
+  },
+  {
+    "dealerName": "AMESBURY CHEVROLET, INC.",
+    "dealerUrl": "https://www.amesburychevy.com/",
+    "city": "Amesbury",
+    "state": "MA",
+    "postalCode": "01913",
+    "bac": "221519",
+    "dealerCode": 32708
+  },
+  {
+    "dealerName": "ALDERMAN'S CHEVROLET GMC",
+    "dealerUrl": "https://www.aldermanchevrolet.com",
+    "city": "Rutland",
+    "state": "VT",
+    "postalCode": "05701",
+    "bac": "115075",
+    "dealerCode": 32010
+  },
+  {
+    "dealerName": "COBLESKILL CHEVROLET GMC",
+    "dealerUrl": "https://cobleskillchevroletbuickgmc.com",
+    "city": "Cobleskill",
+    "state": "NY",
+    "postalCode": "12043",
+    "bac": "305830",
+    "dealerCode": 95656
+  },
+  {
+    "dealerName": "JAMES CHEVROLET OF JOHNSTOWN LLC",
+    "dealerUrl": "https://www.jameschevy.co",
+    "city": "Johnstown",
+    "state": "NY",
+    "postalCode": "12095",
+    "bac": "168833",
+    "dealerCode": 32216
+  },
+  {
+    "dealerName": "ROSS CHEVROLET, INC.",
+    "dealerUrl": "https://www.rosschevy.com",
+    "city": "Whitehall",
+    "state": "NY",
+    "postalCode": "12887",
+    "bac": "115333",
+    "dealerCode": 32021
+  },
+  {
+    "dealerName": "DREZDNER CHEVROLET CORP.",
+    "dealerUrl": "https://www.drezdnerchevrolet.com",
+    "city": "Woodridge",
+    "state": "NY",
+    "postalCode": "12789",
+    "bac": "236147",
+    "dealerCode": 2312
+  },
+  {
+    "dealerName": "H & L CHEVROLET INC",
+    "dealerUrl": "https://hlchevy.com",
+    "city": "Darien",
+    "state": "CT",
+    "postalCode": "06820",
+    "bac": "111142",
+    "dealerCode": 2243
+  },
+  {
+    "dealerName": "W.S. HEALEY CHEVROLET, INC.",
+    "dealerUrl": "https://www.wshealeychevrolet.com",
+    "city": "New Hampton",
+    "state": "NY",
+    "postalCode": "10958",
+    "bac": "111163",
+    "dealerCode": 2260
+  },
+  {
+    "dealerName": "ROBERT GREEN CHEVROLET",
+    "dealerUrl": "https://www.robertgreenchevrolet.com",
+    "city": "Monticello",
+    "state": "NY",
+    "postalCode": "12701",
+    "bac": "111179",
+    "dealerCode": 2236
+  },
+  {
+    "dealerName": "BOMNIN CHEVROLET NANUET",
+    "dealerUrl": "https://www.bomninchevroletbuickgmcnanuet.com",
+    "city": "Nanuet",
+    "state": "NY",
+    "postalCode": "10954",
+    "bac": "330505",
+    "dealerCode": 2448
+  },
+  {
+    "dealerName": "KEY CHEVROLET OF WHITE RIVER",
+    "dealerUrl": "https://www.whiteriverchevrolet.com",
+    "city": "White River Junction",
+    "state": "VT",
+    "postalCode": "05001",
+    "bac": "311182",
+    "dealerCode": 32324
+  },
+  {
+    "dealerName": "BENSON AUTO CO., INC.",
+    "dealerUrl": "https://www.bensonauto.com",
+    "city": "Franklin",
+    "state": "NH",
+    "postalCode": "03235",
+    "bac": "115004",
+    "dealerCode": 32055
+  },
+  {
+    "dealerName": "IRWIN CHEVROLET",
+    "dealerUrl": "https://www.irwinzonechevy.com",
+    "city": "Laconia",
+    "state": "NH",
+    "postalCode": "03246",
+    "bac": "322323",
+    "dealerCode": 32125
+  },
+  {
+    "dealerName": "SUDBAY CHEVROLET CADILLAC GMC, INC.",
+    "dealerUrl": "https://www.sudbaychevrolet.com",
+    "city": "Gloucester",
+    "state": "MA",
+    "postalCode": "01930",
+    "bac": "115440",
+    "dealerCode": 32702
+  },
+  {
+    "dealerName": "PORTSMOUTH CHEVROLET, INC.",
+    "dealerUrl": "https://www.portsmouthchevrolet.com",
+    "city": "Portsmouth",
+    "state": "NH",
+    "postalCode": "03801",
+    "bac": "161177",
+    "dealerCode": 32067
+  },
+  {
+    "dealerName": "DOVER CHEVROLET",
+    "dealerUrl": "https://www.doverchevrolet.com",
+    "city": "Dover",
+    "state": "NH",
+    "postalCode": "03820",
+    "bac": "164265",
+    "dealerCode": 32119
+  },
+  {
+    "dealerName": "RON CURRIER'S HILLTOP CHEVROLET, INC.",
+    "dealerUrl": "https://www.hilltopchevy.com",
+    "city": "Somersworth",
+    "state": "NH",
+    "postalCode": "03878",
+    "bac": "115036",
+    "dealerCode": 32196
+  },
+  {
+    "dealerName": "MCGOVERN CHEVROLET OF PLYMOUTH",
+    "dealerUrl": "https://www.mcgovernchevroletofplymouth.com",
+    "city": "Plymouth",
+    "state": "MA",
+    "postalCode": "02360",
+    "bac": "330895",
+    "dealerCode": 35001
+  },
+  {
+    "dealerName": "COLONIAL SOUTH CHEVROLET, INC.",
+    "dealerUrl": "https://www.colonialsouthchevy.com",
+    "city": "North Dartmouth",
+    "state": "MA",
+    "postalCode": "02747",
+    "bac": "114941",
+    "dealerCode": 32263
+  },
+  {
+    "dealerName": "MARTY'S CHEVROLET",
+    "dealerUrl": "https://www.martys-chevy.com",
+    "city": "Buzzards Bay",
+    "state": "MA",
+    "postalCode": "02532",
+    "bac": "297105",
+    "dealerCode": 20662
+  },
+  {
+    "dealerName": "COPELAND CHEVROLET HYANNIS",
+    "dealerUrl": "https://www.copelandchevrolethyannis.com",
+    "city": "Hyannis",
+    "state": "MA",
+    "postalCode": "02601",
+    "bac": "317049",
+    "dealerCode": 32073
+  },
+  {
+    "dealerName": "JACK CHEVROLET",
+    "dealerUrl": "https://www.jackchevrolet.com",
+    "city": "Saco",
+    "state": "ME",
+    "postalCode": "04072",
+    "bac": "312314",
+    "dealerCode": 32251
+  },
+  {
+    "dealerName": "PAPE CHEVROLET, INC.",
+    "dealerUrl": "https://www.papechevrolet.com",
+    "city": "South Portland",
+    "state": "ME",
+    "postalCode": "04106",
+    "bac": "115037",
+    "dealerCode": 32568
+  },
+  {
+    "dealerName": "QUIRK CHEVROLET",
+    "dealerUrl": "https://www.quirkchevyofportland.com",
+    "city": "Portland",
+    "state": "ME",
+    "postalCode": "04102",
+    "bac": "218509",
+    "dealerCode": 32277
+  }
+]

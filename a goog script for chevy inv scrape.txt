@@ -1,0 +1,258 @@
+# ==========================================
+# GM INVENTORY SCRAPER V3 (API + HTML HYBRID)
+# ==========================================
+
+import csv
+import logging
+import re
+import sys
+import time
+import json
+import random
+from datetime import date
+from pathlib import Path
+
+import requests
+from playwright.sync_api import sync_playwright
+
+# ---------------- CONFIG ----------------
+BASE_DIR = Path(__file__).resolve().parent
+DEALERS_FILE = BASE_DIR / "dealers.csv"
+HISTORY_FILE = BASE_DIR / "inventory_history.csv"
+
+PLAYWRIGHT_TIMEOUT = 60000
+
+VIN_PATTERN = re.compile(r"\b[A-HJ-NPR-Z0-9]{17}\b")
+
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122.0 Safari/537.36",
+]
+
+# ---------------- LOGGING ----------------
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)-7s | %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
+log = logging.getLogger("scraper")
+
+# ---------------- HELPERS ----------------
+def load_dealers():
+    with open(DEALERS_FILE, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+def ensure_history():
+    if not HISTORY_FILE.exists():
+        with open(HISTORY_FILE, "w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerow(
+                ["date","dealer","vin","model","price","condition","source"]
+            )
+
+def load_today_keys(today):
+    keys = set()
+    if not HISTORY_FILE.exists():
+        return keys
+
+    with open(HISTORY_FILE, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row["date"] == today:
+                keys.add(row["vin"])
+    return keys
+
+def append_rows(rows):
+    with open(HISTORY_FILE, "a", newline="", encoding="utf-8") as f:
+        csv.writer(f).writerows(rows)
+
+# ---------------- EXTRACTION ----------------
+def extract_vins(text):
+    return list(set(VIN_PATTERN.findall(text)))
+
+def extract_price(text):
+    match = re.search(r'\$\s?([0-9,]{5,})', text)
+    if match:
+        return int(match.group(1).replace(",", ""))
+    return None
+
+def detect_condition(text, url):
+    t = text.upper()
+
+    if "/NEW/" in url.upper() or "NEW INVENTORY" in t:
+        return "new"
+    if "USED" in t or "PRE-OWNED" in t:
+        return "used"
+    return "unknown"
+
+def extract_model(text):
+    text = text.upper()
+
+    models = [
+        "SILVERADO", "TAHOE", "SUBURBAN",
+        "YUKON", "ESCALADE", "COLORADO"
+    ]
+
+    trims = [
+        "WT","LT","RST","Z71","AT4",
+        "DENALI","HIGH COUNTRY"
+    ]
+
+    m = next((x for x in models if x in text), "UNKNOWN")
+    t = next((x for x in trims if x in text), "")
+
+    return f"{m} {t}".strip()
+
+# ---------------- API CAPTURE ----------------
+def capture_api(page):
+
+    blobs = []
+
+    def handle_response(response):
+        try:
+            url = response.url.lower()
+
+            if any(x in url for x in ["inventory","search","vehicle"]):
+                if "json" in response.headers.get("content-type",""):
+                    blobs.append(response.text())
+        except:
+            pass
+
+    page.on("response", handle_response)
+    return blobs
+
+# ---------------- SCRAPER ----------------
+def scrape_dealer(name, base_url):
+
+    all_data = []
+
+    with sync_playwright() as p:
+
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"]
+        )
+
+        context = browser.new_context(
+            user_agent=random.choice(USER_AGENTS)
+        )
+
+        page = context.new_page()
+
+        api_data = capture_api(page)
+
+        page_num = 1
+
+        while True:
+
+            if page_num == 1:
+                url = f"{base_url}/searchnew.aspx"
+            else:
+                url = f"{base_url}/searchnew.aspx?pt={page_num}"
+
+            try:
+                log.info(f"  Page {page_num}: {url}")
+
+                page.goto(url, wait_until="domcontentloaded", timeout=PLAYWRIGHT_TIMEOUT)
+
+                page.wait_for_timeout(5000)
+
+                html = page.content()
+
+                # -------- HTML extraction --------
+                vins = extract_vins(html)
+
+                for vin in vins:
+                    all_data.append({
+                        "vin": vin,
+                        "model": extract_model(html),
+                        "price": extract_price(html),
+                        "condition": detect_condition(html, url),
+                        "source": "html"
+                    })
+
+                # -------- API extraction --------
+                for blob in api_data:
+                    vins = extract_vins(blob)
+
+                    for vin in vins:
+                        all_data.append({
+                            "vin": vin,
+                            "model": extract_model(blob),
+                            "price": extract_price(blob),
+                            "condition": "new",
+                            "source": "api"
+                        })
+
+                if not vins:
+                    break
+
+                page_num += 1
+
+                if page_num > 20:
+                    break
+
+                time.sleep(random.uniform(2,4))
+
+            except Exception as e:
+                log.warning(f"  Error: {e}")
+                break
+
+        browser.close()
+
+    return all_data
+
+# ---------------- MAIN ----------------
+def main():
+
+    log.info("="*60)
+    log.info("SCRAPER V3 START")
+    log.info("="*60)
+
+    dealers = load_dealers()
+    today = date.today().isoformat()
+
+    ensure_history()
+    existing = load_today_keys(today)
+
+    total = 0
+
+    for d in dealers:
+
+        name = d["dealer_name"]
+        url = d["base_url"]
+
+        log.info(f"Scraping {name}")
+
+        data = scrape_dealer(name, url)
+
+        rows = []
+
+        for item in data:
+
+            vin = item["vin"]
+
+            if vin in existing:
+                continue
+
+            rows.append([
+                today,
+                name,
+                vin,
+                item["model"],
+                item["price"],
+                item["condition"],
+                item["source"]
+            ])
+
+            existing.add(vin)
+
+        append_rows(rows)
+
+        total += len(rows)
+
+        log.info(f"  {len(rows)} new VINs")
+
+    log.info(f"TOTAL NEW VINs: {total}")
+    log.info("="*60)
+
+
+if __name__ == "__main__":
+    main()
