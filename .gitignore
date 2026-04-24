@@ -1,4 +1,5 @@
 *.csv
+!call_sheet.csv
 *.xlsx
 *.xls
 *.log
