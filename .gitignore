@@ -1,11 +1,16 @@
-# Ignore data files
 *.csv
+*.xlsx
+*.xls
+*.log
 
-# Ignore test junk
-Scripts in Progress/
-Testing/
-
-# Ignore system files
 __pycache__/
 *.pyc
+
+Scripts in Progress/
+Testing/
+outputs/
+
+inventory_raw*
+call_sheet*
+
 .DS_Store
